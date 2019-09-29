@@ -23,7 +23,7 @@ Test_folder = os.listdir(os.path.join("Dataset","Test_data"))
 
 for files in Test_folder:
 #	print(files)
-	img = cv2.imread(os.path.join("Dataset","Test_data","1",files))
+	img = cv2.imread(os.path.join("Dataset","Test_data",files))
 	img = np.array(img)
 	img = np.resize(img, (input_shape[0], input_shape[1], input_shape[2]))
 	img = img.reshape( 1,input_shape[0], input_shape[1], input_shape[2])
