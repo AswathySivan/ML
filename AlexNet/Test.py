@@ -19,7 +19,7 @@ for line in f:
 	labels_names.append(line.rstrip())
 
 
-Test_folder = os.listdir(os.path.join("Dataset","Test_data","1"))
+Test_folder = os.listdir(os.path.join("Dataset","Test_data"))
 
 for files in Test_folder:
 	print(files)
