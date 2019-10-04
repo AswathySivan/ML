@@ -1,5 +1,6 @@
 from keras.models import Sequential
 from keras.layers import Conv2D,MaxPooling2D,Flatten,Dense,BatchNormalization
+from keras.optimizers import SGD,Adam
 
 # opt = SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
 opt = Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
